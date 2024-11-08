@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Open sans';
+    src: url(/font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    font-family: 'Open sans';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    height: 100dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   /* Parallax */
+    display: grid;
+    place-content: center;
+}
+
+.lorca-dia {
+    background-image: url(/imagenes/lorca-de-dia.jpg);
+}
+
+.lorca-tarde {
+    background-image: url(/imagenes/lorca-atardeciendo.jpg);
+}
+
+.lorca-noche {
+    background-image: url(/imagenes/lorca-de-noche.jpg);
+}
