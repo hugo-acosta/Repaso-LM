@@ -64,6 +64,7 @@ footer {
 .contacto-footer{
     a {
         text-decoration: none;
+        color: white;
     }
     p {
         cursor: pointer;
@@ -83,6 +84,40 @@ footer {
 
 /* Index */
 
+.seleccion{
+    padding: 20px;
+    text-align: center;
+}
+
+.dias{
+    div {
+        font-size: 24px;
+    }
+    nav {
+        padding: 30px;
+        
+        .boton {
+            margin-right: 10px;;
+        }
+        
+        .boton:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.inscripcion {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .papel {
+        cursor: pointer;
+    }
+}
+
 .lorca-dia {
     background-image: url(/imagenes/principal/lorca-de-dia.jpg);
 }
@@ -97,5 +132,34 @@ footer {
 
 .cliente {
     background-image: url(/imagenes/principal/cliente.png);
+}
+
+.boton { 
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.dia1:hover {
+    background-color: #a6c7e6;
+}
+.dia2:hover {
+    background-color: sandybrown;
+}
+.dia3:hover {
+    background-color: darkolivegreen;
+}
+
+.boton:active {
+    transform: scale(0.95);
 }
 /* END Index */
