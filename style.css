@@ -13,6 +13,64 @@
     padding: 0;
 }
 
+body{
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    background: linear-gradient(to bottom, white, #a6c7e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #343a40;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.titulo-header {
+    position: absolute;
+    text-align: center;
+    font-size: 36px;
+}
+
+.logo-header{
+    position: absolute;
+    align-items: center;
+    left: 20px;
+    img{
+        max-height: 70px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: #343a40;
+    color: white;
+}
+
+.logo-footer {
+    max-height: 200px;
+    text-align: center;
+}
+
+.contacto-footer{
+    a {
+        text-decoration: none;
+    }
+    p {
+        cursor: pointer;
+        margin: 20px 0;
+    }
+}
+
 .parallax {
     height: 100dvh;
     background-size: cover;
@@ -23,14 +81,21 @@
     place-content: center;
 }
 
+/* Index */
+
 .lorca-dia {
-    background-image: url(/imagenes/lorca-de-dia.jpg);
+    background-image: url(/imagenes/principal/lorca-de-dia.jpg);
 }
 
 .lorca-tarde {
-    background-image: url(/imagenes/lorca-atardeciendo.jpg);
+    background-image: url(/imagenes/principal/lorca-atardeciendo.jpg);
 }
 
 .lorca-noche {
-    background-image: url(/imagenes/lorca-de-noche.jpg);
+    background-image: url(/imagenes/principal/lorca-de-noche.jpg);
 }
+
+.cliente {
+    background-image: url(/imagenes/principal/cliente.png);
+}
+/* END Index */
