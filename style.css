@@ -54,6 +54,10 @@ footer {
     padding: 30px;
     background-color: #343a40;
     color: white;
+
+    .copy-logo{
+        text-align: center;
+    }
 }
 
 .logo-footer {
@@ -89,6 +93,12 @@ footer {
     text-align: center;
 }
 
+.inscripcion {
+    nav {
+        padding: 30px;
+    }
+}
+
 .dias{
     div {
         font-size: 24px;
@@ -120,6 +130,13 @@ footer {
 
 .lorca-dia {
     background-image: url(/imagenes/principal/lorca-de-dia.jpg);
+    .titulo {
+        background-color: #343a40b4;
+        padding: 30px;
+        font-size: 40px;
+        color: azure;
+        border-radius: 10%;
+    }
 }
 
 .lorca-tarde {
@@ -158,7 +175,9 @@ footer {
 .dia3:hover {
     background-color: darkolivegreen;
 }
-
+.tick:hover {
+    background-color: lightgreen;
+}
 .boton:active {
     transform: scale(0.95);
 }
