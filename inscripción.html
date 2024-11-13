@@ -19,6 +19,42 @@
         </div>
     </header>
 
+    <main>
+        <div class="parallax paya">
+            <div class="titulo">
+                Rellene el siguiente formulario
+            </div>
+        </div>
+
+        <section class="seleccion formulario">
+            <div class="información-formulario">
+                <button type="button" class="boton info-icon" title="Pincha" onclick="toggleTooltip()">?</button>    <!-- Botón desplegable -->
+                <div class="tooltip" id="tooltip">
+                    Le enviaremos la información del precio 
+                    y el formulario de pago por correo electrónico
+                </div>    <!-- Mensaje -->
+            </div>
+            
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Nombre:" name="nombre" id="nombre" required>
+                    <input type="text" placeholder="Apellidos:" name="apellidos" id="apellidos" required>
+                    <input type="tel" placeholder="Teléfono:" name="telefono" id="telefono" required>
+
+                </div>
+                
+                <div>
+                    <input type="email" placeholder="Email:" name="email" id="email" required>
+                    <input type="text" placeholder="Dirección:" name="direccion" id="direccion" required>
+                    <input type="text" placeholder="Código Postal:" name="cp" id="cp" required>
+                </div>
+
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+
+    </main>
+
     <footer>
         <div>
             <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
@@ -31,5 +67,16 @@
             <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
+
+    <script>
+        function toggleTooltip() {
+            const tooltip = document.getElementById("tooltip");
+            if (tooltip.style.display === "none" || tooltip.style.display === "") {
+                tooltip.style.display = "block";
+            } else {
+                tooltip.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
