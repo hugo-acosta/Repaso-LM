@@ -101,6 +101,46 @@ footer {
     transition: all 0.3s ease-out;
 }
 
+/* Día 1 */
+
+.mañana-1 {
+    background-image: url(imagenes/dia-1/Pal_guevara.jpg);
+}
+.comida-1 {
+    background-image: url(imagenes/dia-1/parador.jpg);
+}
+.tarde-1 {
+    background-image: url(imagenes/dia-1/paso-blanco.jpg);
+}
+
+/* END Día 1 */
+
+/* Día 2 */
+.mañana-2 {
+    background-image: url(imagenes/dia-2/luchena.JPG);
+}
+.comida-2 {
+    background-image: url(imagenes/dia-2/asador-murciano.jpg);
+}
+.tarde-2 {
+    background-image: url(imagenes/dia-2/coy.jpg);
+}
+
+/* END Día 2 */
+
+/* Día 3 */
+.mañana-3 {
+    background-image: url(imagenes/dia-3/sierra-almenara.jpg);
+}
+.comida-3 {
+    background-image: url(imagenes/dia-3/casa\ carmen.webp);
+}
+.tarde-3 {
+    background-image: url(imagenes/dia-3/teatro-guerra.jpg);
+}
+
+/* END Día 3 */
+
 /* Inscripción */
 
 .paya {
@@ -118,6 +158,44 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #666;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #a6c7e6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 .información-formulario {
