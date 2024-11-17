@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer día</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="primer, dia, viaje">
+    <meta name="description" content="Eche un vistazo a los planes para el primer día">
+    <meta property="og:title" content="Día 1 Viaje">
+    <meta property="og:description" content="Planes del primer día">
 </head>
 <body>
     <header>
         <div class="logo-header">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Volver a la página principal">
                 <img src="imagenes/logo/logo-header.png">
             </a>
         </div>
@@ -20,24 +24,98 @@
     </header>
 
     <main>
-        <div class="parallax mañana-1"></div>
-        <section class="seleccion"></section>
-        <div class="parallax comida-1"></div>
-        <section class="seleccion"></section>
-        <div class="parallax tarde-1"></div>
-        <section class="seleccion"></section>
+        <div class="parallax mañana-1">
+            <div class="titulo">
+                Mañana/Mediodía
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <h3>Visitaremos tres iconos antiguos de la historia lorquina:</h3>
+            <ul>
+                <li>Palacio Guevara</li>
+                <li>Ermita del Calvario</li>
+                <li>Castillo de Lorca</li>
+            </ul>
+
+            <br>
+            
+            <p>Y comeremos en el Parador de Lorca</p>
+        </section>
+
+        <div class="parallax comida-1">
+            <div class="titulo">
+                Tarde/Noche
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <h3>Visita a los museos de los diferentes Pasos</h3>
+            <br>
+            <p>Cena libre</p>
+        </section>
+
+        <div class="parallax tarde-1">
+            <div class="titulo">
+                Horario
+            </div>
+        </div>
+        
+        <section class="seleccion">
+            <table>
+                <tr>
+                    <th><h3>Hora</h3></th>
+                    <th><h3>Actividades</h3></th>
+                </tr>
+                <tr>
+                    <td class="horas" rowspan="2">9:00 - 12:30</td>
+                    <td>Palacio Guevara</td>
+                </tr>
+                <tr>
+                    <td>Ruta Calvario</td>
+                </tr>
+                <tr>
+                    <td class="horas">12:30 - 13:30</td>
+                    <td>Visita castillo de Lorca</td>
+                </tr>
+                <tr>
+                    <td class="horas">13:30 - 15:30</td>
+                    <td>Comida Parador</td>
+                </tr>
+                <tr>
+                    <td class="horas">15:30 - 17:00</td>
+                    <td>Descanso</td>
+                </tr>
+                <tr>
+                    <td class="horas">17:00 - 19:30</td>
+                    <td>Museos Pasos</td>
+                </tr>
+                <tr>
+                    <td class="horas">19:30 - 21:00</td>
+                    <td>Cena libre</td>
+                </tr>
+            </table>
+
+            <div>
+                <p>Días</p>
+                <nav>
+                    <button onclick="window.location.href='/dia2.html'" class="boton dia2">2</button>
+                    <button onclick="window.location.href='/dia3.html'" class="boton dia3">3</button>
+                </nav>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div>
-            <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <div class="copy-logo">
+            <img class="logo-footer" itemprop="logo" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="Logo de Agencia Turística Lorquina">
             <br>
-            © Agencia Turística Lorquina 
+            <p itemprop="name">© Agencia Turística Lorquina</p>
         </div>
         <div class="contacto-footer">
-            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
-            <p><a href="tel:+34968723150">☎ +34 968 72 31 50</a></p>
-            <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
+            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank" aria-label="Abrir dirección en Google Maps" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
+            <p><a href="tel:+34968723150" aria-label="Llamar" itemprop="telephone">☎ +34 968 72 31 50</a></p>
+            <p><a href="mailto:turismo.lorca@hotmail.com" aria-label="Mandar email">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
 </body>

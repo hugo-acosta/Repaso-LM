@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tercer día</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="primer, tercer, viaje">
+    <meta name="description" content="Eche un vistazo a los planes para el tercer día">
+    <meta property="og:title" content="Día 3 Viaje">
+    <meta property="og:description" content="Planes del tercer día">
 </head>
 <body>
     <header>
         <div class="logo-header">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Volver a la página principal">
                 <img src="imagenes/logo/logo-header.png">
             </a>
         </div>
@@ -17,27 +21,92 @@
         <div class="titulo-header">
             LORCA
         </div>
+        
     </header>
 
     <main>
-        <div class="parallax mañana-3"></div>
-        <section class="seleccion"></section>
-        <div class="parallax comida-3"></div>
-        <section class="seleccion"></section>
-        <div class="parallax tarde-3"></div>
-        <section class="seleccion"></section>
+        <div class="parallax mañana-3">
+            <div class="titulo">
+                Mañana/Mediodía
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <h3>Haremos una ruta por la Sierra Almenara</h3>
+            <h4>Castillos, cuevas y parajes naturales</h4>
+
+            <br>
+
+            <p>Posteriormente comeremos en Casa Mercedes en Puntas de Calnegre (playa)</p>
+        </section>
+        
+        <div class="parallax comida-3">
+            <div class="titulo">
+                Tarde/Noche
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <h3>Veremos una obra de teatro en Teatro Guerra</h3>
+            <br>
+            <p>Cenaremos en Casa de los Musso</p>
+        </section>
+
+        <div class="parallax tarde-3">
+            <div class="titulo">
+                Horario
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <table>
+                <tr>
+                    <th><h3>Hora</h3></th>
+                    <th><h3>Actividades</h3></th>
+                </tr>
+                <tr>
+                    <td class="horas">9:00 - 13:30</td>
+                    <td>Sierra Almenara</td>
+                </tr>
+                <tr>
+                    <td class="horas" rowspan="2">13:30 - 15:30</td>
+                    <td>Playa Puntas de Calnegre</td>
+                </tr>
+                <tr>
+                    <td>Comida Casa Carmen</td>
+                </tr>
+                <tr>
+                    <td class="horas">15:30 - 18:00</td>
+                    <td>Descanso</td>
+                </tr>
+                <tr>
+                    <td class="horas">18:00 - 20:30</td>
+                    <td>Obra de teatro</td>
+                </tr>
+                <tr>
+                    <td class="horas">20:30 - 22:30</td>
+                    <td>Cena Casa Musso</td>
+                </tr>
+            </table>
+
+            <p>Días</p>
+            <nav>
+                <button onclick="window.location.href='/dia1.html'" class="boton dia2">1</button>
+                <button onclick="window.location.href='/dia2.html'" class="boton dia3">2</button>
+            </nav>
+        </section>
     </main>
 
-    <footer>
-        <div>
-            <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <div class="copy-logo">
+            <img class="logo-footer" itemprop="logo" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="Logo de Agencia Turística Lorquina">
             <br>
-            © Agencia Turística Lorquina 
+            <p itemprop="name">© Agencia Turística Lorquina</p>
         </div>
         <div class="contacto-footer">
-            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
-            <p><a href="tel:+34968723150">☎ +34 968 72 31 50</a></p>
-            <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
+            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank" aria-label="Abrir dirección en Google Maps" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
+            <p><a href="tel:+34968723150" aria-label="Llamar" itemprop="telephone">☎ +34 968 72 31 50</a></p>
+            <p><a href="mailto:turismo.lorca@hotmail.com" aria-label="Mandar email">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
 </body>

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscripcion</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="inscripcion, viaje, lorca">
+    <meta name="description" content="Inscríbase ahora en nuestro plan para visitar Lorca">
+    <meta property="og:title" content="Página Inscripción">
+    <meta property="og:description" content="Inscribir clientes interesados en el viaje">
 </head>
 <body>
     <header>
         <div class="logo-header">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Volver a la página principal">
                 <img src="imagenes/logo/logo-header.png">
             </a>
         </div>
@@ -55,16 +59,16 @@
 
     </main>
 
-    <footer>
-        <div>
-            <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <div class="copy-logo">
+            <img class="logo-footer" itemprop="logo" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="Logo de Agencia Turística Lorquina">
             <br>
-            © Agencia Turística Lorquina 
+            <p itemprop="name">© Agencia Turística Lorquina</p>
         </div>
         <div class="contacto-footer">
-            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
-            <p><a href="tel:+34968723150">☎ +34 968 72 31 50</a></p>
-            <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
+            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank" aria-label="Abrir dirección en Google Maps" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
+            <p><a href="tel:+34968723150" aria-label="Llamar" itemprop="telephone">☎ +34 968 72 31 50</a></p>
+            <p><a href="mailto:turismo.lorca@hotmail.com" aria-label="Mandar email">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
 

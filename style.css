@@ -84,6 +84,14 @@ footer {
     background-attachment: fixed;   /* Parallax */
     display: grid;
     place-content: center;
+
+    .titulo {
+        background-color: #343a40b4;
+        padding: 30px;
+        font-size: 40px;
+        color: azure;
+        border-radius: 10%;
+    }
 }
 
 .boton { 
@@ -101,8 +109,76 @@ footer {
     transition: all 0.3s ease-out;
 }
 
-/* Día 1 */
+.seleccion{
+    padding: 20px;
+    text-align: center;
 
+    h3 {
+        font-size: 30px;
+    }
+
+    li {
+        padding: 5px;
+        font-size: 24px;
+        list-style: none;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    nav {
+        padding: 30px;
+        
+        .boton {
+            margin-right: 10px;;
+        }
+        
+        .boton:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+    th {
+        background-color: #007BFF;
+        color: white;
+        font-size: 18px;
+        padding: 12px;
+        text-transform: uppercase;
+    }
+    td {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #343a40b4;
+    }
+    th, td {
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #e6f7ff;
+    }
+    .horas {
+        font-weight: bold;
+        color: #007BFF;
+    }
+}
+/* Día 1 */
+    
 .mañana-1 {
     background-image: url(imagenes/dia-1/Pal_guevara.jpg);
 }
@@ -229,11 +305,6 @@ input[type="submit"]:hover {
 
 /* Index */
 
-.seleccion{
-    padding: 20px;
-    text-align: center;
-}
-
 .inscripcion {
     nav {
         padding: 30px;
@@ -244,17 +315,6 @@ input[type="submit"]:hover {
     div {
         font-size: 24px;
     }
-    nav {
-        padding: 30px;
-        
-        .boton {
-            margin-right: 10px;;
-        }
-        
-        .boton:last-child {
-            margin-right: 0;
-        }
-    }
 }
 
 .inscripcion {
@@ -264,20 +324,10 @@ input[type="submit"]:hover {
     p {
         font-size: 20px;
     }
-    .papel {
-        cursor: pointer;
-    }
 }
 
 .lorca-dia {
     background-image: url(/imagenes/principal/lorca-de-dia.jpg);
-    .titulo {
-        background-color: #343a40b4;
-        padding: 30px;
-        font-size: 40px;
-        color: azure;
-        border-radius: 10%;
-    }
 }
 
 .lorca-tarde {

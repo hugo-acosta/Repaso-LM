@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
     <link rel="stylesheet" href="/style.css">
+    <meta name="keywords" content="turismo, visita, lorca">
+    <meta name="description" content="Visita Lorca como nunca antes se había hecho con nuestra agencia turística">
+    <meta property="og:title" content="Página Principal de Guía Turística en Lorca">
+    <meta property="og:description" content="Viaje turístico por todo el municipio de Lorca">
 </head>
 <body>
     <header>
         <div class="logo-header">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Volver a la página principal">
                 <img src="imagenes/logo/logo-header.png">
             </a>
         </div>
@@ -20,8 +24,8 @@
     </header>
 
     <main>
-        <div class="parallax lorca-dia">
-            <div class="titulo">Campaña turística primaveral</div>
+        <div class="parallax lorca-dia" itemscope itemtype="https://schema.org/Event">
+            <div class="titulo" itemprop="name">Campaña turística primaveral</div>
         </div>
 
         <section class="seleccion dias">
@@ -29,9 +33,9 @@
                 <p><b>Tres días</b> de visitas</p>
             </div>
             <nav>
-                <button onclick="window.location.href='/dia1.html'" class="boton dia1">1º</button>
-                <button onclick="window.location.href='/dia2.html'" class="boton dia2">2º</button>
-                <button onclick="window.location.href='/dia3.html'" class="boton dia3">3º</button>
+                <button onclick="window.location.href='/dia1.html'" class="boton dia1" aria-label="Redirección página primer día">1º</button>
+                <button onclick="window.location.href='/dia2.html'" class="boton dia2" aria-label="Redirección página segundo día">2º</button>
+                <button onclick="window.location.href='/dia3.html'" class="boton dia3" aria-label="Redirección página tercer día">3º</button>
             </nav>
         </section>
         
@@ -41,7 +45,7 @@
             <h1>¿Le interesa? </h1>
             <p>Pinche en el tick e inscríbase ahora</p>
             <nav>
-                <button onclick="window.location.href='/inscripción.html'" class="boton tick">✓</button>
+                <button onclick="window.location.href='/inscripción.html'" class="boton tick" aria-label="Redirección página inscripcion">✓</button>
             </nav>
         </section>
         
@@ -50,16 +54,16 @@
         <!-- <div class="parallax cliente"></div> -->
     </main>
 
-    <footer>
+    <footer itemscope itemtype="https://schema.org/Organization">
         <div class="copy-logo">
-            <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
+            <img class="logo-footer" itemprop="logo" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="Logo de Agencia Turística Lorquina">
             <br>
-            © Agencia Turística Lorquina 
+            <p itemprop="name">© Agencia Turística Lorquina</p>
         </div>
         <div class="contacto-footer">
-            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
-            <p><a href="tel:+34968723150">☎ +34 968 72 31 50</a></p>
-            <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
+            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank" aria-label="Abrir dirección en Google Maps" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
+            <p><a href="tel:+34968723150" aria-label="Llamar" itemprop="telephone">☎ +34 968 72 31 50</a></p>
+            <p><a href="mailto:turismo.lorca@hotmail.com" aria-label="Mandar email">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
 </body>

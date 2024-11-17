@@ -4,10 +4,10 @@ Día 1:
     - Mañana    => Palacio Guevara y Ruta Calvario
     - Mediodía  => Castillo de Lorca y comida Parador
     - Tarde     => Hora y media de descanso, visita museos de bordados
-    - Noche     => Refrigerio en Plaza España y cena libre
+    - Noche     => Cena libre
     
 Día 2:
-    - Mañana    => Visita al pantano de puentes, río Luchena y Zarcilla de Ramos
+    - Mañana    => Visita al pantano de puentes, río Luchena, embalse Valdeinfierno
     - Mediodía  => Visita La Paca y comida en Asador Murciano
     - Tarde     => Visita Coy, Las Terreras y llegada a Lorca para descansar
     - Noche     => Libre
@@ -16,7 +16,7 @@ Día 3:
     - Mañana    => Ruta Sierra Almenara (castillos, naturaleza y cuevas históricas)
     - Mediodía  => Visita playa de Puntas de Calnegre y comida en Restaurante Casa Mercedes
     - Tarde     => Descanso y obra de teatro en Teatro Guerra
-    - Noche     => Cena al término de la obra y última noche en el hotel
+    - Noche     => Cena al término de la obra Casa Musso y última noche en el hotel
 
 
 HOTEL JARDINES DE LORCA

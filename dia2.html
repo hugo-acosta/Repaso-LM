@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segundo día</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="segundo, dia, viaje">
+    <meta name="description" content="Eche un vistazo a los planes para el segudo día">
+    <meta property="og:title" content="Día 2 Viaje">
+    <meta property="og:description" content="Planes del segundo día">
 </head>
 <body>
     <header>
         <div class="logo-header">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Volver a la página principal">
                 <img src="imagenes/logo/logo-header.png">
             </a>
         </div>
@@ -20,24 +24,96 @@
     </header>
 
     <main>
-        <div class="parallax mañana-2"></div>
-        <section class="seleccion"></section>
-        <div class="parallax comida-2"></div>
-        <section class="seleccion"></section>
-        <div class="parallax tarde-2"></div>
-        <section class="seleccion"></section>
+        <div class="parallax mañana-2">
+            <div class="titulo">
+                Mañana/Mediodía
+            </div>
+        </div>
+
+        <section class="seleccion">
+            <h3>Visitaremos tres parajes naturales fantásticos:</h3>
+            <ul>
+                <li>Pantano de Puentes</li>
+                <li>Río Luchena</li>
+                <li>Embalse de Valdeinfierno</li>
+            </ul>
+
+            <br>
+            
+            <p>Veremos La Paca y comeremos en Asador Murciano</p>
+        </section>
+        
+        <div class="parallax comida-2">
+            <div class="titulo">
+                Tarde/Noche
+            </div>
+        </div>
+        
+        <section class="seleccion">
+            <h3>Continuaremos con los pueblos de Coy y Las Terreras</h3>
+            <br>
+            <p>Cenaremos en Mesón Lorquino</p>
+        </section>
+
+        <div class="parallax tarde-2">
+            <div class="titulo">
+                Horario
+            </div>
+        </div>
+        <section class="seleccion">
+            <table>
+                <tr>
+                    <th><h3>Hora</h3></th>
+                    <th><h3>Actividades</h3></th>
+                </tr>
+                <tr>
+                    <td class="horas" rowspan="3">8:00 - 12:30</td>
+                    <td>Pantano de Puentes</td>
+                </tr>
+                <tr>
+                    <td>Río Luchena</td>
+                </tr>
+                <tr>
+                    <td>Embalse Valdeinfierno</td>
+                </tr>
+                <tr>
+                    <td class="horas" rowspan="2">12:30 - 15:00</td>
+                    <td>Visita La Paca</td>
+                </tr>
+                <tr>
+                    <td>Comida Asador Murciano</td>
+                </tr>
+                <tr>
+                    <td class="horas" rowspan="2">15:00 - 17:30</td>
+                    <td>Coy</td>
+                </tr>
+                <tr>
+                    <td>Las Terreras</td>
+                </tr>
+                <tr>
+                    <td class="horas">17:30 - 00:00</td>
+                    <td>Libre</td>
+                </tr>
+            </table>
+
+            <p>Días</p>
+            <nav>
+                <button onclick="window.location.href='/dia1.html'" class="boton dia1">1</button>
+                <button onclick="window.location.href='/dia3.html'" class="boton dia3">3</button>
+            </nav>
+        </section>
     </main>
 
-    <footer>
-        <div>
-            <img class="logo-footer" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="">
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <div class="copy-logo">
+            <img class="logo-footer" itemprop="logo" src="/imagenes/logo/logo-sin-fondo-recortado.png" alt="Logo de Agencia Turística Lorquina">
             <br>
-            © Agencia Turística Lorquina 
+            <p itemprop="name">© Agencia Turística Lorquina</p>
         </div>
         <div class="contacto-footer">
-            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
-            <p><a href="tel:+34968723150">☎ +34 968 72 31 50</a></p>
-            <p><a href="mailto:turismo.lorca@hotmail.com">✉ turismo.lorca@hotmail.com</a></p>
+            <p><a href="https://maps.app.goo.gl/3QwMaPTZRUgN4DG18" target="_blank" aria-label="Abrir dirección en Google Maps" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">📍 Alameda de Cervantes, 2, 30800 Lorca, Murcia</a></p>
+            <p><a href="tel:+34968723150" aria-label="Llamar" itemprop="telephone">☎ +34 968 72 31 50</a></p>
+            <p><a href="mailto:turismo.lorca@hotmail.com" aria-label="Mandar email">✉ turismo.lorca@hotmail.com</a></p>
         </div>
     </footer>
 </body>
